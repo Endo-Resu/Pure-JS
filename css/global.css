@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSansRegular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSansSemiBold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoMedium.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoBold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --color-main: #5d71dd;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-bg: #fafafa;
+    --color-accent: #6078f1;
+    --color-gray: #888888;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    overflow-anchor: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    border: none;
+    padding: 14px 0;
+    border-radius: 4px;
+    width: 100%;
+    color: var(--color-white);
+    background-color: var(--color-main);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--color-accent);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
